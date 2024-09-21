@@ -1,0 +1,86 @@
+/* Cart Page Styles */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#mini-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+#mini-container:hover {
+    transform: scale(1.05);
+}
+
+#mini-container img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#mini-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+#mini-container p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1a5276;
+}
