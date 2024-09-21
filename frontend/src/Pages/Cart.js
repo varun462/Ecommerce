@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import { useCart } from './CartContext';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+
 import './cart.css';
 
 const CartPage = () => {
-    const { cart, removeFromCart, clearCart } = useCart();
+    const { cart, removeFromCart } = useCart();
     const navigate = useNavigate();
 
     useEffect(() => {
         console.log('Cart:', cart);
     }, [cart]);
 
-    const handleBuy = async (item) => {
+    const handleBuy = async () => {
        
         try {
             //await axios.post('http://localhost:3001/api/buy', { items: [item] });

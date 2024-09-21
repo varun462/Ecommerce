@@ -86,7 +86,7 @@ const LoginForm = () => {
                 </Form>
                 <br />
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <h4>If you don't have an account</h4>
+                    <h4>If you don not have an account</h4>
                     <Link to="/signup" style={{ padding: 0, margin: '0 0 0 10px', color: 'red' }}>Create Account</Link>
                 </div>
             </FormWrapper>

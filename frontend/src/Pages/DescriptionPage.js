@@ -7,7 +7,7 @@ import { useCart } from './CartContext';
 const DescriptionPage = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const { addToCart, cart } = useCart();
+    const { addToCart } = useCart();
     const { product,description, image } = location.state || {};
 
     const handleAddToCart = () => {

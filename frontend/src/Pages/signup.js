@@ -47,7 +47,7 @@ const SignupForm = () => {
                 }, 3000);
             }
         } catch (error) {
-            //setError('Error signing up');
+            setError('Error signing up');
             toast.error('Error signing up. Please try again.', {
                 position: "top-right",
                 autoClose: 1000,
