@@ -16,7 +16,7 @@ const AdminPage = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/products');
+                const response = await axios.get('https://ecommerce-5-730y.onrender.com/api/products');
                 setProducts(response.data);
             } catch (error) {
                 console.error('Error fetching products:', error);
@@ -29,7 +29,7 @@ const AdminPage = () => {
     const handleAddProduct = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/products/add', { id, name, description, price, image }, {
+            const response = await axios.post('https://ecommerce-5-730y.onrender.com/api/products/add', { id, name, description, price, image }, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
@@ -49,7 +49,7 @@ const AdminPage = () => {
 
     const handleDeleteProduct = async (productId) => {
         try {
-            await axios.delete(`http://localhost:3001/api/products/delete/${productId}`, {
+            await axios.delete(`https://ecommerce-5-730y.onrender.com/api/products/delete/${productId}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }

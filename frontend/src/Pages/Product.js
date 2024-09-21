@@ -17,7 +17,7 @@ const ProductPage = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/products');
+                const response = await axios.get('https://ecommerce-5-730y.onrender.com/api/products');
                 setProducts(response.data);
             } catch (error) {
                 console.error('Error fetching products:', error);
@@ -53,7 +53,7 @@ const ProductPage = () => {
 
     const logout = async () => {
         try {
-            const response = await axios.post('http://localhost:3001/api/Logout');
+            const response = await axios.post('https://ecommerce-5-730y.onrender.com/api/Logout');
             localStorage.removeItem('token');
             navigate('/login');
             console.log(response.data);

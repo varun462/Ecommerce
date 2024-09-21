@@ -17,7 +17,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/login', { email, password });
+            const response = await axios.post('https://ecommerce-5-730y.onrender.com/api/login', { email, password });
             const { token, user } = response.data;
             localStorage.setItem('token', token);
 

@@ -16,7 +16,7 @@ const SignupForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/signup', { email, password });
+            const response = await axios.post('https://ecommerce-5-730y.onrender.com/api/signup', { email, password });
 
             if (response.data.message === "Email already in use") {
                 toast.error('Account already exists. Please login.', {
